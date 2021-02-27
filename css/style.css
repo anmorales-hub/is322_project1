@@ -1,0 +1,98 @@
+html {
+  background-color: #f7d063 ;
+ }
+
+img {
+  height:250px;
+}
+
+select {
+  border: 2px solid black;
+}
+
+ #products {
+   background-color: #f7d063;
+   display: flex;
+   flex-flow: wrap;
+   flex-direction: row;
+   justify-content: center;
+ }
+
+ .card {
+     flex-grow: 5;
+     margin: 1em;
+     border: 1px solid black;
+     align-self: center;
+     background: #ABB2B9;
+ }
+
+ #sideNav{
+     display: flex;
+     flex-flow: wrap;
+     flex-direction: row;
+     justify-content: center;
+     text-align: center;
+     background-color: #f7d063 ;
+ }
+
+ .filter {
+  display: block;
+ }
+
+ #footer {
+     padding: 2% 4%;
+     color: white;
+     background: #566573;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ @media only screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        width: 900px;
+    }
+
+    .navigation {
+        min-height: auto;
+        flex: 0 0 35px;
+    }
+
+    .navigation .filter-sort {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1000px) {
+    .container {
+        width: 720px;
+    }
+
+    .product-container .card {
+        flex-basis: 330px;
+        height: 330px;
+    }
+}
+
+@media only screen and (max-width: 749px) {
+    .container {
+        margin: 0 15px;
+        width: calc(100% - 30px);
+    }
+
+    .content-container .product-container{
+        width: calc(100% - 50px);
+    }
+
+    #products .card {
+        height: 20%;
+        flex-basis: 100%;
+        flex-direction: column;
+        display: flex;
+    }
+
+    image {
+        max-height: 20% !important;
+        width: auto !important;
+    }
+}

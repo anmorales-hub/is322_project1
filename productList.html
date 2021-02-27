@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS322 Project 1</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+<div class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html"> Ducks Inc. </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link px-4" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-4" href="productList.html">Product List</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Side Nav -->
+<div id='sideNav'>
+  <div class='filter'>
+    <label for='sortFilter'>Sort By:</label>
+      <select id='sortFilter'>
+        <option value="name"> Name (A-Z)</option>
+        <option value="ascending">Price: Ascending </option>
+      </select>
+  </div>
+
+  <div class='filter'>
+    <label for='cheap'>Price Range</label>
+    <select id='cheap'>
+      <option value ='true'>Any</option>
+      <option value ='false'> <$10</option>
+    </select>
+  </div>
+
+  <div class='filter'>
+    <label for='available'>Show Unavailable?</label>
+    <select id='available'>
+      <option value='true'>Yes</option>
+      <option value='false'>No</option>
+    </select>
+  </div>
+</div>
+
+<!--Content -->
+<div id='products'>
+<!-- see productList.js -->
+</div>
+
+<!-- Footer -->
+<div id='footer'>
+  <div>
+    <p> Ducks Inc.</p>
+  </div>
+  <div>
+    <p>info@ducksinc.com</p>
+    <p> 888-888-8888</p>
+  </div>
+  <div>
+    <p>Town, NJ</p>
+    <p>07753</p>
+  </div>
+</div>
+
+  <script src="productList.js"></script>
+</body>
+
+</html>
